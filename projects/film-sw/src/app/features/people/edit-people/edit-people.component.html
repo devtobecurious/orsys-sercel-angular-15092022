@@ -1,0 +1,13 @@
+{{ people | json }}
+
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Placeholder" required [(ngModel)]="people.prenom" name="surname" type="text"
+          class="validate">
+        <label for="first_name">Prénom</label>
+      </div>
+    </div>
+  </form>
+</div>

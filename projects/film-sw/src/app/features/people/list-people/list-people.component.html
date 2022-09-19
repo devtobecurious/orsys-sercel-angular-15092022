@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col s12 m6">
+    <app-row-people [titre]="'Edition' + item.prenom" (demandeSuppression)="supprimerPeople($event)" [people]=" item"
+      *ngFor="let item of peopleObs$ | async">
+    </app-row-people>
+  </div>
+
+
+  <app-edit-people></app-edit-people>
